@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-1 Функции высшего порядка</title>
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<h1>Функции высшего порядка. Задачи.</h1>
+
+			<ol>
+				<li>
+					<p>
+						Создать две функции и дать им осмысленные названия:<br>
+						- первая функция принимает массив и колбэк <b>(одна для всех вызовов)</b><br>
+						- вторая функция (колбэк) обрабатывает каждый элемент массива <b>(для каждого вызова свой callback)</b><br>
+					</p>
+					<p>
+						Первая функция возвращает строку "New value: " и результат обработки:
+					</p>
+					<p>
+						<code>
+							firstFunc(['my', 'name', 'is', 'Trinity'], handler1) → "New value: MyNameIsTrinity"<br>
+							firstFunc([10, 20, 30], handler2) → "New value: 100, 200, 300,"<br>
+							firstFunc([{age: 45, name: 'Jhon'}, {age: 20, name: 'Aaron'}], handler3) → "New value: Jhon is 45, Aaron is 20,"<br>
+							firstFunc(['abc', '123'], handler4) → "New value: cba, 321," // строки инвертируются
+						</code>
+					</p>
+
+					<p>
+						Подсказка: secondFunc должна быть представлена функцией, которая принимает один аргумент (каждый элемент массива) и возвращает результат его обработки
+
+					</p>
+				</li>
+				<li></li>
+			</ol>
+		</section>
+
+		<p>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></p>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>

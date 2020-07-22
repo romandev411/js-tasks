@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-5 Метод Sort. Задачи.</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<h1>Метод Sort. Задачи.</h1>
+
+			<ol>
+				<li>
+					Отсортируйте массив массивов так, чтобы вначале располагались наименьшие массивы (размер массива определяется его длиной):
+					<br>
+					<code>[  [14, 45],  [1],  ['a', 'c', 'd']  ] → [ [1], [14, 45], ['a', 'c', 'd'] ]</code>
+				</li>
+				<li>
+					<p>
+					Есть массив объектов:
+					</p>
+					<code>
+						[<br>
+						&nbsp;{cpu: 'intel', info: {cores:2, сache: 3}},<br>
+						&nbsp;{cpu: 'intel', info: {cores:4, сache: 4}},<br>
+						&nbsp;{cpu: 'amd', info: {cores:1, сache: 1}},<br>
+						&nbsp;{cpu: 'intel', info: {cores:3, сache: 2}},<br>
+						&nbsp;{cpu: 'amd', info: {cores:4, сache: 2}}<br>
+						]
+					</code>
+					<p>
+						Отсортировать их по возрастающему количеству ядер <b>(cores)</b>.
+					</p>
+				</li>
+				<li>
+					<p>
+						Создать функцию, которая будет принимать массив продуктов и две цены. Функция должна вернуть все продукты, цена которых находится в указанном диапазоне, и сортировать от дешевых к дорогим:
+					</p>
+
+					<code>
+						let products = [<br>
+						&nbsp;{title: 'prod1', price: 5.2}, {title: 'prod2', price: 0.18},<br>
+						&nbsp;{title: 'prod3', price: 15}, {title: 'prod4', price: 25},<br>
+						&nbsp;{title: 'prod5', price: 18.9}, {title: 'prod6', price: 8},<br>
+						&nbsp;{title: 'prod7', price: 19}, {title: 'prod8', price: 63}<br>
+						];
+					</code>
+
+					<br>
+
+					<code>
+						filterCollection(products, 15, 30) → [{...price: 15}, {...price: 18.9}, {...price: 19}, {...price: 25}]
+					</code>
+				</li>
+			</ol>
+		</section>
+
+		<p>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></p>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
+
+<!-- &nbsp; -->
+<!-- <br> -->

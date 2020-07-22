@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-5 Функции высшего порядка</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<h1>Функции высшего порядка. Задачи.</h1>
+
+			<ol>
+				<li>
+					<p>
+						Создать две функции и дать им осмысленные названия:<br>
+						- первая функция принимает массив и колбэк <b>(одна для всех вызовов)</b><br>
+						- вторая функция (колбэк) обрабатывает каждый элемент массива <b>(для каждого вызова свой callback)</b><br>
+					</p>
+					<p>
+						Первая функция возвращает строку "New value: " и результат обработки:
+					</p>
+					<p>
+
+							<code>firstFunc(['my', 'name', 'is', 'Trinity'], handler1)</code><br>→ "New value: MyNameIsTrinity"<br><br>
+							<code>firstFunc([10, 20, 30], handler2)</code><br> → "New value: 100, 200, 300,"<br><br>
+							<code>firstFunc([{age: 45, name: 'Jhon'}, {age: 20, name: 'Aaron'}], handler3)</code><br> → "New value: Jhon is 45, Aaron is 20,"<br><br>
+							<code>firstFunc(['abc', '123'], handler4)</code><br> → "New value: cba, 321," // строки инвертируются
+
+					</p>
+
+					<p>
+						Подсказка: secondFunc должна быть представлена функцией, которая принимает один аргумент (каждый элемент массива) и возвращает результат его обработки
+
+					</p>
+				</li>
+				<li>
+					<p>
+						Написать аналог метода every. Создайте функцию every, она должна принимать первым аргументом массив чисел (обязательно проверьте что передан массив) вторым аргументом callback (обязательно проверьте что передана функция)
+						функция должна возвращать true или false в зависимости от результата вызова callback (проверить число больше 5). Callback  должен принимать один элемент массива, его индекс в массиве и весь массив.
+					</p>
+
+					<em>Что такое метод every можно прочитать <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/every">здесь</a>.</em>
+				</li>
+			</ol>
+		</section>
+
+		<p>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></p>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>

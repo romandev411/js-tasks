@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-3 Тернарный оператор. Switch case.</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+
+		<section>
+			<h1>Тернарный оператор. Switch case. Задачи.</h1>
+
+			<ol>
+				<li>
+					<p>Записать в виде switch case следующее условие:</p>
+					<code>if (a === ‘block’) { <br>
+						&nbsp;&nbsp;console.log(‘block’)<br>
+						&nbsp;} else if (a === ‘none’) {<br>
+							&nbsp;&nbsp;console.log(‘none’)<br>
+							&nbsp;} else if (a === ‘inline’) {<br>
+								&nbsp;&nbsp;console.log(‘inline’)<br>
+								&nbsp;} else {<br>
+									&nbsp;&nbsp;console.log(‘other’)<br>
+						}
+					</code>
+					<p>
+						Записать условие, используя конструктор switch. В консоли должно отразиться только одно значение.
+					</p>
+				</li>
+				<li>
+					<p>Из задач по условному оператору if else выполнить задачи 1, 2 и 3 в виде тернарного оператора.</p>
+
+					<ol>
+						<li>Если переменная равна “hidden”, присвоить ей значение “visible”, иначе - “hidden”.</li>
+						<li>
+							<p>Используя if, записать условие:</p>
+							<ul type="a">
+								<li>если переменная равна нулю, присвоить ей 1;</li>
+								<li>если меньше нуля - строку “less then zero”;</li>
+								<li>если больше нуля - используя оператор “присвоение”, переменную умножить на 10 (использовать краткую запись).</li>
+							</ul>
+						</li>
+						<li><p>Дан объект</p>
+							<code>
+								let car = {<br>
+									&nbsp;name: 'Lexus',<br>
+									&nbsp;age: 10,<br>
+									&nbsp;create: 2008,<br>
+									&nbsp;needRepair: false<br>
+								}<br>
+							</code>
+							<p>
+							Написать условие если возраст машины больше 5 лет то нужно вывести в консоль сообщение 'Need Repair' и свойство needRepair в объекте car изменить на true; иначе изменить на false.
+							</p>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</section>
+
+		<p>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></p>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>

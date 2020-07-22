@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>todo-list</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="todo-list">
+			<h1 class="todo-list__title">Todo app</h1>
+
+			<div class="todo-list__form-wrap">
+			  <div class="todo-list__form js-todo-form">
+				<label class="todo-list__label">
+				  <span class="todo-list__title-input">Title</span>
+				  <input class="todo-list__input  js-todo-title" type="text">
+				</label>
+
+				<label class="todo-list__label">
+				  <span class="todo-list__title-input">Text</span>
+				  <input class="todo-list__input js-todo-text" type="text">
+				</label>
+
+				<button class="todo-list__btn  todo-list__btn--add  js-todo-btn" type="button">Add todo</button>
+				<button class="todo-list__btn  todo-list__btn--edit  js-save-edit-todo-btn" type="button">Edit todo</button>
+			  </div>
+			</div>
+
+			<div class="todo-list__table-wrap">
+			  <table class="todo-list__table">
+				<thead class="todo-list__thead">
+				  <tr class="todo-list__thead-tr">
+					<td class="todo-list__thead-td">Title</td>
+					<td class="todo-list__thead-td">Text</td>
+					<td class="todo-list__thead-td">Controls</td>
+				  </tr>
+				</thead>
+
+				<tbody class="todo-list__tbody  js-todo-tbody"></tbody>
+			  </table>
+			</div>
+		  </div>
+
+		<p>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></p>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
+
+<!-- &nbsp; -->
+<!-- <br> -->

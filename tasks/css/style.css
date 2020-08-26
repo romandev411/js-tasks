@@ -1,10 +1,16 @@
-section {
-	display: inline-block;
-	vertical-align: top;
+body {
+	background-color: #000;
+	margin: 0;
+}
+
+section,
+footer{
 	width: 800px;
 	padding: 16px;
-	border: 1px solid tomato;
-	margin: 8px;
+	border: 2px solid tomato;
+	margin: 14px 12px;
+	background-color: #fff;
+    box-shadow: 0 0 0 2px #fff;
 	font-size: 18px;
 	font-family: Arial, sans-serif;
 	line-height: 1.4;
@@ -16,7 +22,7 @@ h1 {
 	background-color: tomato;
 }
 
-li:not(:last-child) {
+ol > li:not(:last-child) {
 	margin-bottom: 1em;
     padding-bottom: .5em;
     border-bottom: 2px solid lightgrey;
@@ -24,4 +30,8 @@ li:not(:last-child) {
 
 code {
 	font-weight: 700;
+}
+
+img {
+	max-width: 100%;
 }

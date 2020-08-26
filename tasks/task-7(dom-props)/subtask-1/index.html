@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-7 DOM</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<div>
+				<article>
+					<p>
+						Lorem ipsum dolor sit amet, odio omnesque ius cu, quo ex atqui
+						antiopam. At detracto menandri eos. Duo in causae viderer,
+						graeci
+						<a href="#">reprehendunt</a>
+						has in. Decore
+						<mark>nemore</mark>
+						philosophia te pro, nobis
+						legere causae ex mei, odio putant mentitum ea ius.
+						Vix nostro deserunt explicari eu.
+					</p>
+				</article>
+			</div>
+
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Link3</a></li>
+				<li><a href="#">Link4</a></li>
+			</ul>
+
+			<span></span>
+			<a href="#">Some link</a>
+		</section>
+
+		<section>
+			<h1>Свойства. Задачи.</h1>
+
+			<ol>
+				<li>
+					Найти параграф и получить его текстовое содержимое (только текст!)
+				</li>
+
+				<li>
+					Создать функцию, которая принимает в качестве аргумента
+					узел DOM и возвращает информацию (в виде объекта) о типе узла,
+					об имени узла и о количестве дочерних узлов (если детей нет - 0).
+				</li>
+
+				<li>
+					<p>Получить массив, который состоит из текстового содержимого ссылок внутри списка:</p>
+					<code>
+						getTextFromUl(ul) ---> ["Link1", "Link2", "Link3"]
+					</code>
+				</li>
+
+				<li>
+					<p>
+						В параграфе заменить все дочерние текстовые узлы на “-text-” (вложенные теги должны остаться).
+						Конечный результат:
+					</p>
+					<code>
+						-text-<a href="#">reprehendunt</a>-text-<mark>nemore</mark>-text-
+					</code>
+				</li>
+			</ol>
+		</section>
+
+		<footer>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></footer>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
+
+<!-- &nbsp; -->
+<!-- <br> -->
+<!-- &lt; -->

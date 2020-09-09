@@ -69,7 +69,7 @@ console.log('↓-----1-----↓');
 						<td>${i+1}</td>
 						<td>${users[i].name}</td>
 						<td>${users[i].email}</td>
-						<td>${users[i].balance}</td>
+						<td class="balance">${users[i].balance}</td>
 					</tr>
 				`;
 		}
@@ -100,7 +100,7 @@ console.log('↓-----1-----↓');
 
 	function createTemplate() {
 		let template =
-			`
+			`<button class="btn-filter  js-btn-filter" type="button">Filter</button>
 				<table>
 					<thead>
 						<tr>
@@ -108,7 +108,7 @@ console.log('↓-----1-----↓');
 						</tr>
 					</thead>
 
-					<tbody>
+					<tbody class="tbody">
 						${createTbody(users)}
 					</tbody>
 
@@ -120,9 +120,38 @@ console.log('↓-----1-----↓');
 		return template;
 	}
 
-	console.log(createTemplate());
+/* 	console.log(createTemplate()); */
 
-	wrapTemplate.insertAdjacentHTML('afterbegin', createTemplate())
+	wrapTemplate.insertAdjacentHTML('afterbegin', createTemplate());
+
+	wrapTemplate.addEventListener('click', function(e) {
+		const table = document.querySelector('.tbody');
+		const childrenTbody = Array.prototype.slice.call(table.children);
+
+		if (e.target.classList.contains('js-btn-filter')) {
+			e.target.classList.toggle('rotate');
+		}
+
+		if (e.target.classList.contains('rotate')) {
+			let arr = childrenTbody.sort(function(a, b) {
+				return parseInt(a.querySelector('.balance').textContent) - parseInt(b.querySelector('.balance').textContent);
+			});
+
+			for (let i = 0; i < arr.length; i++) {
+				table.appendChild(arr[i]);
+			}
+		}
+
+		if (!e.target.classList.contains('rotate')) {
+			let arr = childrenTbody.sort(function(a, b) {
+				return parseInt(b.querySelector('.balance').textContent) - parseInt(a.querySelector('.balance').textContent);
+			});
+
+			for (let i = 0; i < arr.length; i++) {
+				table.appendChild(arr[i]);
+			}
+		}
+	});
 
 })();
 

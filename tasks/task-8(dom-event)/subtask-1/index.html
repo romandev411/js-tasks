@@ -6,16 +6,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>task-8 DOM</title>
 		<link rel="stylesheet" href="/tasks/css/style.css">
+
+		<style>
+			.edit-bg {
+				background-color: tomato;
+			}
+		</style>
 	</head>
 
 	<body>
 		<section>
-			<button id="btn-msg" data-text=”Custom message”>Show message</button>
+			<button id="btn-msg" data-text="Custom message">Show message</button>
 			<button id="btn-generate">Generate item</button>
 
 			<p><strong id="tag">Tag:</strong></p>
 
-			<ul>
+			<ul id="ul">
 				<li>Item 1</li>
 				<li>Item 2</li>
 			</ul>
@@ -34,58 +40,15 @@
 				</li>
 
 				<li>
-					При нажатии на любой узел документа показать в элементе с id=tag имя тега нажатого элемента.
+					При нажатии на любой узел документа показать в элементе с <code>id="tag"</code>	 имя тега нажатого элемента.
 				</li>
 
 				<li>
-					При нажатии на кнопку btn-generate добавлять в список ul элемент списка Li с текстом Item + порядковый номер Li по списку, т.е Item 3, Item 4 и т.д
+					При нажатии на кнопку btn-generate добавлять в список <code>ul</code> элемент списка <code>Li</code> с текстом <b>Item + порядковый номер Li по списку</b> ,т.е Item 3, Item 4 и т.д
 				</li>
 
 				<li>
-					Из проекта todo реализовать редактирование задачи.
-				</li>
-
-				<li>
-					Реализовать примитивный дропдаун. Изначально все dropdown-menu скрыты через класс .d-none. При клике на dropdown-item должен отображаться блок dropdown-menu который вложен именно в тот  dropdown-item на котором произошел клик. При повторном клике на этот же dropdown-item блок dropdown-menu должен закрыться. При клике на любой другой dropdown-item уже открытый dropdown-menu должен закрываться а на тот который кликнули открываться.
-					<code>
-						<ul class="menu">
-							<li class="dropdown-item">
-							  <span>Dropdown menu item</span>
-							  <div class="dropdown-menu d-none">
-								<ul class="dropdown-list">
-								  <li>Dropdown item 1</li>
-								  <li>Dropdown item 2</li>
-								</ul>
-							  </div>
-							</li>
-							<li>
-							  <span>Menu item</span>
-							</li>
-							<li class="dropdown-item">
-							  <span>Dropdown menu item 2</span>
-							  <div class="dropdown-menu d-none">
-								<ul class="dropdown-list">
-								  <li>Second Dropdown item 1</li>
-								  <li>Second Dropdown item 2</li>
-								</ul>
-							  </div>
-							</li>
-						  </ul>
-
-						  <style>
-							  .d-none {
-									display: none;
-								}
-
-								.dropdown-item {
-									cursor: pointer;
-								}
-						  </style>
-					</code>
-				</li>
-
-				<li>
-					Из презентации “Занятие 7 - Манипуляция DOM. Работа с атрибутами.” дополнить функционал для таблицы из задачи 6.
+					Из презентации “Занятие 7 - Манипуляция DOM. Работа с атрибутами." дополнить функционал для таблицы из задачи 6.
 					 Создать кнопку которая будет при клике
 					 сортировать пользователей по возрастанию и убыванию поля balance при этом в
 					 кнопке должна показываться стрелка в какую сторону сейчас отсортированы пользователи.

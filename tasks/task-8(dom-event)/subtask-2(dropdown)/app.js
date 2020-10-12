@@ -10,7 +10,7 @@ menu.addEventListener('click', function(e) {
 
 	console.log(el)
 	if(el && el.classList.contains(itemClass)) {
-		el.querySelector('.dropdown-menu').classList.remove('d-none');
+		el.querySelector('.dropdown-menu').classList.toggle('d-none');
 
 		let arr = isSibling(el);
 		for (let i = 0; i < arr.length; i++) {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-9 arrow func</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<h1>arrow func</h1>
+
+			<ol>
+				<li>
+					<p>
+						Переделать функцию с использованием функции-стрелки (в методе reduce тоже использовать arrow function):
+					</p>
+
+					<p>
+						<code>
+							function sum() {<br>
+								&nbsp;const params = Array.prototype.slice.call(arguments);<br>
+								<br>
+								&nbsp;if (!params.length) return 0;<br>
+								<br>
+								&nbsp;return params.reduce(function (prev, next) { return prev + next; });<br>
+							  }
+						</code>
+					</p>
+					<p>
+						<code>
+							sum(1, 2, 3, 4); // 10<br>
+							sum(); // 0
+						</code>
+					</p>
+					<p>
+						что такое метод reduce можно прочитать
+						<a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">
+							здесь
+						</a>
+					</p>
+				</li>
+			</ol>
+		</section>
+
+		<footer>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></footer>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
+
+<!-- &nbsp; -->
+<!-- <br> -->
+<!-- &lt; -->

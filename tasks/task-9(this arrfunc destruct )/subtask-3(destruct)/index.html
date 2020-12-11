@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-9 Деструктурирующее присваивание</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<h1>Деструктурирующее присваивание</h1>
+
+			<ol>
+				<li>
+					<p>
+						Используя <code>rest</code> оператор и деструктуризацию, создать функцию,
+						 которая принимает любое количество аргументов и возвращает объект,
+						 содержащий первый аргумент и массив из остатка:
+					</p>
+					<p>
+						<code>
+							func('a', 'b', 'c', 'd') →<br>
+							{<br>
+								&nbsp;first: 'a',<br>
+								&nbsp;other: ['b', 'c', 'd']<br>
+							}
+						</code>
+					</p>
+				</li>
+
+				<li>
+					<p>
+						Организовать функцию getInfo, которая принимает объект вида<br>
+						<code>{ name: ...,  info: { employees: [...], partners: [ … ]  } }</code><br>
+						и выводит в консоль имя (если имени нет, показывать 'Unknown') и первые две компании из массива partners:
+					</p>
+					<p>
+						<code>
+						const organisation = { <br>
+							&nbsp;name: 'Google',  <br>
+							&nbsp;info: { <br>
+								&nbsp;&nbsp;employees: ['Vlad', 'Olga'], <br>
+								&nbsp;&nbsp;partners: ['Microsoft', 'Facebook', 'Xing']<br>
+								&nbsp;}<br>
+						  };
+						</code>
+					</p>
+					<p>
+						<code>
+							getInfo(organisation); → <br>
+							Name: Google <br>
+							Partners: Microsoft Facebook<br>
+						</code>
+					</p>
+				</li>
+			</ol>
+		</section>
+
+		<footer>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></footer>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
+
+<!-- &nbsp; -->
+<!-- <br> -->
+<!-- &lt; -->

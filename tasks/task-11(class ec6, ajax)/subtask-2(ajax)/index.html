@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-11 ajax</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<h1>ajax</h1>
+
+			<ol>
+				<li>
+					Получить пользователей (users) от сервера <a href="https://jsonplaceholder.typicode.com">jsonplaceholder</a>.<br>
+					Получив ответ от сервера вывести имена пользователей на страницу.<br>
+					При клике на имя пользователя в произвольном месте должна появиться подробная информация о нем.<br>
+					Для визуальной части можно использовать bootstrap или другие фреймворки.<br>
+				</li>
+				<li>
+					*Создать форму добавления пользователя состоящая из полей name, email, username, phone, website<br>
+					при сабмите формы сделать POST запрос на сервер после ответа от сервера добавлять<br>
+					полученного пользователя на страницу.
+				</li>
+				<li>
+					Просмотреть это <a href="https://vimeo.com/349312125/c9028288bd">видео</a>
+				</li>
+			</ol>
+		</section>
+
+		<section class="js-users"></section>
+
+		<section class="js-form">
+			<form>
+				<fieldset>
+					<legend>ajax form</legend>
+					<p><input type="text" placeholder="name" id="name"></p>
+					<p><input type="email" placeholder="email" id="email"></p>
+					<p><input type="text" placeholder="username" id="username"></p>
+					<p><input type="text" placeholder="phone" id="phone"></p>
+					<p><input type="text" placeholder="website" id="website"></p>
+				</fieldset>
+
+				<button type="button" id="submit">submit</button>
+			</form>
+
+			<div class="js-users2"></div>
+		</section>
+
+		<footer>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></footer>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
+
+<!-- &nbsp; -->
+<!-- <br> -->
+<!-- &lt; -->

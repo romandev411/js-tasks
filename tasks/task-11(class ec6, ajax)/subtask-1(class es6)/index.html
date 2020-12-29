@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-11 class</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<h1>class</h1>
+
+			<ol>
+				<li>
+					<p>
+						Реализовать конструктор в ES6 синтаксисе (также используйте аргументы по умолчанию):
+					</p>
+					<p>
+						<code>
+							function Component(tagName) {<br>
+								&nbsp;this.tagName = tagName || 'div';<br>
+								&nbsp;this.node = document.createElement(tagName);<br>
+							  }
+						</code>
+					</p>
+					<p>
+						Пример вызова:
+					</p>
+					<p>
+						<code>
+							const comp = new Component('span');
+						</code>
+					</p>
+				</li>
+
+				<li>
+					<p>
+						Реализовать конструктор и методы в ES6 синтаксисе:
+					</p>
+
+					<p>
+						<code>
+							function Component(tagName) {<br>
+								&nbsp;this.tagName = tagName || 'div';<br>
+								&nbsp;this.node = document.createElement(tagName);<br>
+							  }
+						</code>
+					</p>
+					<p>
+						<code>
+							Component.prototype.setText = function (text) {
+								this.node.textContent = text;
+							  };
+						</code>
+					</p>
+				</li>
+
+				<li>
+					Создать класс калькулятора который будет принимать стартовое значение и у него будут методы сложить, вычесть, умножить , разделить.
+					Также у него должны быть геттер и сеттер для получения и установки текущего числа с которым производятся вычисления.
+				</li>
+			</ol>
+		</section>
+
+		<footer>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></footer>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
+
+<!-- &nbsp; -->
+<!-- <br> -->
+<!-- &lt; -->

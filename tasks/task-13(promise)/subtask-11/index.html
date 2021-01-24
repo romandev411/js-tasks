@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>task-13 promise</title>
+		<link rel="stylesheet" href="/tasks/css/style.css">
+	</head>
+
+	<body>
+		<section>
+			<h1>promise</h1>
+
+			<ol>
+				<li>
+					<p>
+						Создать функцию, которая возвращает промис.  Функция принимает два аргумента - время, через которое промис должен выполниться, и значение, с которым промис будет выполнен.
+					</p>
+
+					<p>
+						<code>
+							function promiseCreator(...) {...}<br>
+							const prom = promiseCreator(500, 'Ok!');<br>
+							prom.then(console.log);<br>
+							// Ok!<br>
+						</code>
+					</p>
+				</li>
+
+				<li>
+					<p>
+						Создать класс, который производит экземпляр со следующими свойствами:<br>
+						- promise - промис, который создается во время запуска конструктора;<br>
+						- reject - метод, при выполнении которого promise реджектится;<br>
+						- resolve - метод, при выполнении которого promise резолвится.<br>
+					</p>
+
+					<p>
+						<code>
+							class Prom {...}<br>
+							const inst = new Prom();<br>
+							inst.promise.then(data => console.log(data));<br>
+							setTimeout(() => inst.resolve('test'), 5000)<br>
+							→  test<br>
+						</code>
+					</p>
+				</li>
+			</ol>
+		</section>
+
+		<footer>Задачи с курса по js в школе <a href="https://www.easycode.school/">easycode.school</a></footer>
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
+
+<!-- &nbsp; -->
+<!-- <br> -->
+<!-- &lt; -->

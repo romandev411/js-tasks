@@ -7,7 +7,7 @@ const countrySelect = form['country'];
 const categorySelect = form['category'];
 const categorySearch = form['search'];
 
-function onSelectChange(event) {
+/* function onSelectChange(event) {
     const country = countrySelect.value;
     const category = categorySelect.value;
 
@@ -24,19 +24,37 @@ function onSelectChange(event) {
         articles.forEach((article) => uiService.addArticle(article));
         // console.timeEnd();
     });
-}
+} */
+
+function onSelectChange(event) {
+    const country = countrySelect.value;
+    const category = categorySelect.value;
+
+    if (!country || !category) return console.log('Введите страну и категорию для поиска');
+
+    newsService.getTopHeadlinesNews(category, country)
+        .then((response) => {
+            const { totalResults, articles } = response;
+            uiService.clearContainer();
+            articles.forEach((article) => uiService.addArticle(article));
+        })
+        .catch(console.log);
+
+};
 
 function onInputChange(event) {
     const input = categorySearch.value;
 
     if (!input) return;
 
-    newsService.getEverythingNews(input, (response) => {
-        const { totalResults, articles } = response;
+    newsService.getEverythingNews(input)
+        .then((response) => {
+            const { totalResults, articles } = response;
 
-        uiService.clearContainer();
-        articles.forEach((article) => uiService.addArticle(article));
-    });
+            uiService.clearContainer();
+            articles.forEach((article) => uiService.addArticle(article));
+        })
+        .catch(console.log);
 }
 
 

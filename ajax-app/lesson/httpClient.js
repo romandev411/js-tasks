@@ -1,24 +1,15 @@
 class HttpClient {
-    /**
-     *
-     * @param {String} url
-     * @param {Function} callback
-     */
-    get(url, callback) {
-        console.log(ENV.apiKey)
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', url);
-        xhr.setRequestHeader('X-Api-Key', ENV.apiKey);
-        xhr.send();
-        xhr.addEventListener('load', () => callback(JSON.parse(xhr.responseText)));
+    get(url) {
+        return new Promise((res, rej) => {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', url);
+            xhr.setRequestHeader('X-Api-Key', ENV.apiKey);
+            xhr.send();
+            xhr.addEventListener('load', () => res(JSON.parse(xhr.responseText)));
+            xhr.addEventListener('error', () => rej(JSON.parse(xhr.responseText)));
+        })
     }
 
-     /**
-     *
-     * @param {String} url
-     * @param {any} data
-     * @param {Function} callback
-     */
     post(url, data, callback) {
         const xhr = new XMLHttpRequest();
         xhr.open('POST', url);
